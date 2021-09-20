@@ -5,6 +5,7 @@ import uuid
 
 class File:
     def __init__(self, _path):
+        # Initialisation of path
         self.path = _path
         # self._current = 0
         if not os.path.exists(self.path):
@@ -20,9 +21,9 @@ class File:
             return f.write(data)
 
     def __add__(self, second):
+        # string summation
         newpath = os.path.join(tempfile.gettempdir(), str(uuid.uuid4().hex))
         newfile = type(self)(newpath)
-        # newfile = File(os.path.join(tempfile.gettempdir(), str(uuid.uuid4().hex)))
         newfile.write(self.read() + second.read())
         return newfile
 
