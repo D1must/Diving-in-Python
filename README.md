@@ -1,4 +1,4 @@
-# Diving-in-Python
+# Diving in Python
 https://www.coursera.org/learn/diving-in-python
 
 It is the first course from four of specialisaton of programming on Python. 
